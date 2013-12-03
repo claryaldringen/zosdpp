@@ -45,9 +45,7 @@ int main(int argc, char** argv)
 {
 	parse_args(argc, argv);
 	get_rice_to_plates();
-	pthread_mutex_init(&mut_var, NULL);
 	sit_philosophers_around_table();
-	pthread_mutex_destroy(&mut_var);
 	return (EXIT_SUCCESS);
 }
 
