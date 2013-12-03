@@ -35,9 +35,7 @@ void *philosopher_task(void *param)
 		put_down_forks(id, &left_fork, &right_fork);
 		philosophize(id);
 	}
-	pthread_mutex_lock(&mut_var);
 	printf("Filozof %d odchází od stolu.\n", id);
-	pthread_mutex_unlock(&mut_var);
   return(NULL);
 }
 
